@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>展示数据库数据</title>
+</head>
+<body>
+数据：<br>
+	<table border = "1">
+		{% for row in data %}
+			<tr>
+			{% for cell in row %}
+				<td>{{cell}}</td>
+			{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

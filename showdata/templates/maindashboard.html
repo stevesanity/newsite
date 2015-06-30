@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="main dashboard">
+  <meta name="author" content="StevenXu">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Maindashboard Template in Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/hypertensionApp/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/hypertensionApp/css/maindashboard.css" rel="stylesheet">
+
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script type="text/javascript" src="../docs/dist/js/maindashboard.js"></script>
+    <script src="../static/hypertensionApp/js/fhir-client.js"></script>
+    <script src="../static/hypertensionApp/js/jquery.min.js"></script>
+    <script src="../static/hypertensionApp/js/medication.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="frontpage.html">Home</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li class="active"><a href="#about">Main dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3 col-md-4">
+        <h2>Hi~<span id="name"></span></h2>
+        <img class="img-circle" src="../static/hypertensionApp/images/smile.jpg" alt="Generic placeholder image" width="140" height="140">
+      </div>
+      <div class="col-md-8">
+        <div class="alert alert-info" role="alert" id="med_list" >
+          <strong>Medication Prescription Alert:</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+        <li class="active"><a href="#" id="Overview">Overview <span class="sr-only">(current)</span></a></li>
+        <li><a href="#"  id="Risk-prediction"  >Risk prediction</a></li>
+        <li><a href="#" id="Health-alert">Health alert</a></li>
+        <li><a href="#" id="Vital-sign-record">Vital sign record</a></li>
+        </ul>
+      </div>
+    <div class=" col-sm-offset-4 col-md-8 main">
+        <h1 class="page-header">Vital Sign Record</h1>
+        <div class="table-responsive" id="vital_sign">
+        </div>
+        <!--<div class="jumbotron" id="vital_sign">-->
+
+        <!--</div>-->
+
+       <!-- /.carousel -->
+
+
+    </div>
+  </div>
+</div>
+  </body>
+</html>

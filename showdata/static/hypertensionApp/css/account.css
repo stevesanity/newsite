@@ -1,0 +1,30 @@
+body {
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+
+}
+
+.form-heading{
+  text-align: center;
+  padding-top: 40px;
+}
+.form {
+  max-width: 600px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.btn-lg{
+  margin-top: 40px;
+  margin-left: 220px;
+}
+
+
+

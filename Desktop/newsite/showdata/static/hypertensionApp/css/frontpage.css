@@ -1,0 +1,32 @@
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+
+  }
+
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.marketing{
+  text-align: center;
+}
+
+.row{
+  text-align: center;
+}
+
+.marketing .col-lg-6 {
+  margin-bottom: 20px;
+  text-align: center;
+}
